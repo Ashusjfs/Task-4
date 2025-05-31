@@ -19,27 +19,27 @@ To configure and test basic firewall rules to allow or block traffic on specific
 sudo ufw status
 sudo ufw enable
 
-###✅ Step 2: Listed Current Firewall Rules
+### ✅ Step 2: Listed Current Firewall Rules
 
 sudo ufw status numbered
 
-###✅ Step 3: Blocked Port 23 (Telnet)
+### ✅ Step 3: Blocked Port 23 (Telnet)
 
 sudo ufw deny 23
 
-###✅ Step 4: Allowed SSH (Port 22)
+### ✅ Step 4: Allowed SSH (Port 22)
 
 sudo ufw allow 22
 
-###✅ Step 5: Tested Port 23
+### ✅ Step 5: Tested Port 23
 
 Used telnet localhost 23 to confirm it was blocked.
 
-###✅ Step 6: Removed the Block Rule for Port 23
+### ✅ Step 6: Removed the Block Rule for Port 23
 
 sudo ufw delete deny 23
 
-##📊 Outcome
+## 📊 Outcome
 
 Learned how to manage basic firewall rules using both command-line (UFW) and GUI (Windows).
 
